@@ -1,0 +1,9 @@
+event_timestamp,user_id,event_type,amount,country
+2026-04-01T10:00:00Z,u001,call_started,0,CA
+2026-04-01T10:05:00Z,u001,call_ended,0,CA
+2026-04-01T11:00:00Z,u002,subscription_started,49.99,CA
+2026-04-02T09:00:00Z,u003,call_started,0,US
+2026-04-02T09:30:00Z,u003,call_ended,0,US
+2026-04-03T15:00:00Z,u004,subscription_started,99.99,US
+2026-04-03T16:00:00Z,u004,payment_succeeded,99.99,US
+2026-04-04T12:00:00Z,u002,payment_succeeded,49.99,CA

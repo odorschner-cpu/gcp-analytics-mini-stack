@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: raw_events
+        description: "Raw events loaded from CSV by ingestion/load_to_duckdb.py"
+        columns:
+          - name: event_timestamp
+            tests: [not_null]
+          - name: user_id
+            tests: [not_null]
+          - name: event_type
+            tests: [not_null]
+          - name: amount
+          - name: country
