@@ -23,6 +23,15 @@ CSV → Python ingestion → DuckDB (raw.raw_events + ops.pipeline_run_log) → 
    - `dbt run`
    - `dbt test`
 
+### Execution context
+1) The project must be executed from the root of the dbt project, where dbt_project.yml and the models/ directory are located, with the virtual environment activated.
+2) cd C:\OlivierBironDivers\gcp-analytics-mini-stack\dbt
+3) .\.venv\Scripts\Activate.ps1
+4) dbt build
+5) Run only the models: dbt run
+6) Run only the tests: dbt test
+7) Check configuration and connectivity: dbt debug
+     
 ### Validation Snapshot (example)
 - raw.raw_events: 8 rows
 - ops.pipeline_run_log: 1 run logged
